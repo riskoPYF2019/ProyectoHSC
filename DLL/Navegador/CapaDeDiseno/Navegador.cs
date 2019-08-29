@@ -14,7 +14,7 @@ namespace CapaDeDiseno
     public partial class Navegador : UserControl
     {
         logica logic = new logica();
-        string tabla = "Asientos";
+        string tabla = "def";
         int pos = 8;
         int noCampos = 1;
         int x = 30;
@@ -28,9 +28,13 @@ namespace CapaDeDiseno
 
         private void Navegador_Load(object sender, EventArgs e)
         {
-            DataTable dt = logic.consultaLogica(tabla);
-            dataGridView1.DataSource = dt;
-            CreaComponentes();
+            if (tabla!="def")
+            {
+                DataTable dt = logic.consultaLogica(tabla);
+                dataGridView1.DataSource = dt;
+                CreaComponentes();
+            }
+            
             
         }
 
@@ -125,10 +129,18 @@ namespace CapaDeDiseno
         private void Btn_ingresar_Click(object sender, EventArgs e)
         {
             btn_Guardar.Enabled = false;
-
             logic.nuevoQuery(crearInsert());
-            DataTable dt = logic.consultaLogica(tabla);
-            dataGridView1.DataSource = dt;
+            foreach (Control componente in Controls)
+            {
+                if (componente is TextBox || componente is DateTimePicker)
+                {
+                    componente.Enabled = true;
+                    componente.Text = "";
+
+                }
+
+            }
+
 
         }
 
@@ -165,8 +177,7 @@ namespace CapaDeDiseno
         {
             btn_Guardar.Enabled = false;
             logic.nuevoQuery( crearUpdate());
-            DataTable dt = logic.consultaLogica(tabla);
-            dataGridView1.DataSource = dt;
+           
 
             foreach (Control componente in Controls)
             {
@@ -248,6 +259,66 @@ namespace CapaDeDiseno
                 }
 
             }
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows[0].Selected = true;
+            dataGridView1.CurrentCell = dataGridView1.Rows[0].Cells[0];
+
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            DataTable dt = logic.consultaLogica(tabla);
+            dataGridView1.DataSource = dt;
+        }
+
+        private void Button12_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows[dataGridView1.Rows.Count-2].Selected = true;
+            dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.Rows.Count-2].Cells[0];
+        }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+          int fila= dataGridView1.SelectedRows[0].Index;
+            if (fila>0)
+            {
+                dataGridView1.Rows[fila-1].Selected = true;
+                dataGridView1.CurrentCell = dataGridView1.Rows[fila - 1].Cells[0];
+            }
+           
+        }
+
+        private void Button11_Click(object sender, EventArgs e)
+        {
+            int fila = dataGridView1.SelectedRows[0].Index;
+            if (fila < dataGridView1.Rows.Count-1)
+            {
+                dataGridView1.Rows[fila +1].Selected = true;
+                dataGridView1.CurrentCell = dataGridView1.Rows[fila + 1].Cells[0];
+            }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            foreach (Control componente in Controls)
+            {
+                if (componente is TextBox || componente is DateTimePicker)
+                {
+                    componente.Enabled = true;
+                    componente.Text = "";
+
+                }
+
+            }
+        }
+
+
+        private void Button14_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

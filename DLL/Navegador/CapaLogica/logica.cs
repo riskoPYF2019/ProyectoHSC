@@ -39,6 +39,8 @@ namespace CapaLogica
         {
             sn.ejecutarQuery(query);
         }
+
+
     }
 
 }
