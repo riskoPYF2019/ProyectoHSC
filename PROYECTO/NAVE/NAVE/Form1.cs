@@ -15,7 +15,7 @@ namespace NAVE
         public Form1()
         {
             InitializeComponent();
-            navegador1.asignarTabla("Peliculas");
+            navegador1.asignarTabla("peliculas");
         }
 
         private void Form1_Load(object sender, EventArgs e)

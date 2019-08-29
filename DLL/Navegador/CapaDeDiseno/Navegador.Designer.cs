@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Navegador));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button14 = new System.Windows.Forms.Button();
@@ -109,6 +110,7 @@
             this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
             this.button14.Location = new System.Drawing.Point(1053, 0);
             this.button14.Margin = new System.Windows.Forms.Padding(0);
             this.button14.Name = "button14";
@@ -127,6 +129,7 @@
             this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
             this.button13.Location = new System.Drawing.Point(972, 0);
             this.button13.Margin = new System.Windows.Forms.Padding(0);
             this.button13.Name = "button13";
@@ -144,6 +147,7 @@
             this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
             this.button12.Location = new System.Drawing.Point(891, 0);
             this.button12.Margin = new System.Windows.Forms.Padding(0);
             this.button12.Name = "button12";
@@ -162,6 +166,7 @@
             this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
             this.button11.Location = new System.Drawing.Point(810, 0);
             this.button11.Margin = new System.Windows.Forms.Padding(0);
             this.button11.Name = "button11";
@@ -180,6 +185,7 @@
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.Location = new System.Drawing.Point(729, 0);
             this.button10.Margin = new System.Windows.Forms.Padding(0);
             this.button10.Name = "button10";
@@ -198,6 +204,7 @@
             this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
             this.button9.Location = new System.Drawing.Point(648, 0);
             this.button9.Margin = new System.Windows.Forms.Padding(0);
             this.button9.Name = "button9";
@@ -216,6 +223,7 @@
             this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.Location = new System.Drawing.Point(567, 0);
             this.button8.Margin = new System.Windows.Forms.Padding(0);
             this.button8.Name = "button8";
@@ -234,6 +242,7 @@
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.Location = new System.Drawing.Point(486, 0);
             this.button7.Margin = new System.Windows.Forms.Padding(0);
             this.button7.Name = "button7";
@@ -251,6 +260,7 @@
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.Location = new System.Drawing.Point(405, 0);
             this.button6.Margin = new System.Windows.Forms.Padding(0);
             this.button6.Name = "button6";
@@ -268,6 +278,7 @@
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.Location = new System.Drawing.Point(324, 0);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
@@ -286,6 +297,7 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.Location = new System.Drawing.Point(243, 0);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
@@ -305,6 +317,7 @@
             this.btn_Guardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Guardar.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.Image")));
             this.btn_Guardar.Location = new System.Drawing.Point(162, 0);
             this.btn_Guardar.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Guardar.Name = "btn_Guardar";
@@ -323,6 +336,7 @@
             this.Modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Modificar.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Modificar.Image = ((System.Drawing.Image)(resources.GetObject("Modificar.Image")));
             this.Modificar.Location = new System.Drawing.Point(81, 0);
             this.Modificar.Margin = new System.Windows.Forms.Padding(0);
             this.Modificar.Name = "Modificar";
@@ -341,6 +355,7 @@
             this.btn_ingresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_ingresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ingresar.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ingresar.Image = ((System.Drawing.Image)(resources.GetObject("btn_ingresar.Image")));
             this.btn_ingresar.Location = new System.Drawing.Point(0, 0);
             this.btn_ingresar.Margin = new System.Windows.Forms.Padding(0);
             this.btn_ingresar.Name = "btn_ingresar";
