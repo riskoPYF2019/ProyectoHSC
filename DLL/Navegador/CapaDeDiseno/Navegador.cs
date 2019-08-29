@@ -125,6 +125,15 @@ namespace CapaDeDiseno
         private void Btn_ingresar_Click(object sender, EventArgs e)
         {
             btn_Guardar.Enabled = false;
+
+            logic.nuevoQuery(crearInsert());
+            DataTable dt = logic.consultaLogica(tabla);
+            dataGridView1.DataSource = dt;
+
+        }
+
+        string crearInsert()// crea el query de insert
+        {
             string query = "INSERT INTO " + tabla + " VALUES (";
             int posCampo = 0;
             string campos = "";
@@ -150,14 +159,32 @@ namespace CapaDeDiseno
             campos = campos.TrimEnd(' ');
             campos = campos.TrimEnd(',');
             query += campos + ");";
-            contenido.Text = query;
+            return query;
         }
-
         private void Btn_Guardar_Click(object sender, EventArgs e)
         {
             btn_Guardar.Enabled = false;
+            logic.nuevoQuery( crearUpdate());
+            DataTable dt = logic.consultaLogica(tabla);
+            dataGridView1.DataSource = dt;
+
+            foreach (Control componente in Controls)
+            {
+                if (componente is TextBox || componente is DateTimePicker)
+                {
+                    componente.Enabled = true;
+                    componente.Text = "";
+
+                }
+
+            }
+
+        }
+
+       string crearUpdate()// crea el query de update
+        {
             string query = "UPDATE " + tabla + " SET ";
-            string whereQuery = "Where";
+            string whereQuery = " WHERE  ";
             int posCampo = 0;
             string campos = "";
             foreach (Control componente in Controls)
@@ -165,7 +192,7 @@ namespace CapaDeDiseno
                 if (componente is TextBox || componente is DateTimePicker)
                 {
 
-                    if (posCampo >= 0)
+                    if (posCampo > 0)
                     {
                         switch (tipoCampo[posCampo])
                         {
@@ -182,12 +209,13 @@ namespace CapaDeDiseno
                         switch (tipoCampo[posCampo])
                         {
                             case "Text":
-                                whereQuery += componente.Name + " =  " + componente.Text;
+                                whereQuery += componente.Name + " = '" + componente.Text;
                                 break;
                             case "Num":
-                                whereQuery += componente.Name + " =  " + componente.Text;
+                                whereQuery += componente.Name + " = " + componente.Text;
                                 break;
                         }
+
                     }
                     posCampo++;
 
@@ -197,12 +225,29 @@ namespace CapaDeDiseno
             campos = campos.TrimEnd(' ');
             campos = campos.TrimEnd(',');
             query += campos + whereQuery + ";";
-            contenido.Text = query;
+            //contenido.Text = query;
+            return query;
         }
 
         private void Modificar_Click(object sender, EventArgs e)
         {
             btn_Guardar.Enabled = true;
+            int posCampo = 0;
+            foreach (Control componente in Controls)
+            {
+                if (componente is TextBox || componente is DateTimePicker)
+                {
+                    
+                    componente.Text = dataGridView1.CurrentRow.Cells[posCampo].Value.ToString();
+                    if (posCampo == 0)
+                    {
+                        componente.Enabled = false;
+                    }
+                    posCampo++;
+
+                }
+
+            }
         }
     }
 }

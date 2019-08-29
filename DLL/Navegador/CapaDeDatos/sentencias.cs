@@ -83,5 +83,16 @@ namespace CapaDeDatos
 
             return nuevaCadena;// devuelve la cadena unicamente con el tipo
         }
+
+        public void ejecutarQuery(string query)// ejecuta un query en la BD
+        {
+            try
+            {
+                OdbcCommand consulta = new OdbcCommand(query, cn.probarConexion());
+                consulta.ExecuteNonQuery();
+            }
+            catch (OdbcException ex) { Console.WriteLine(ex.ToString()); }
+           
+        }
     }
 }

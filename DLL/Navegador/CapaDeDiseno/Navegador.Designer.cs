@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.contenido = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button15 = new System.Windows.Forms.Button();
@@ -47,35 +45,12 @@
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.Modificar = new System.Windows.Forms.Button();
             this.btn_ingresar = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.contenido = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.contenido, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 137);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1142, 30);
-            this.tableLayoutPanel1.TabIndex = 7;
-            // 
-            // contenido
-            // 
-            this.contenido.AutoSize = true;
-            this.contenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contenido.Location = new System.Drawing.Point(3, 0);
-            this.contenido.Name = "contenido";
-            this.contenido.Size = new System.Drawing.Size(1136, 30);
-            this.contenido.TabIndex = 0;
-            this.contenido.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
             // 
@@ -83,6 +58,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(21, 437);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1133, 201);
             this.dataGridView1.TabIndex = 6;
             // 
@@ -259,7 +236,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(76, 76);
             this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
+            this.button8.Text = "Inicio";
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button8.UseVisualStyleBackColor = false;
             // 
@@ -276,7 +253,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(76, 76);
             this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
+            this.button7.Text = "Imprimir";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
             // 
@@ -293,7 +270,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(76, 76);
             this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
+            this.button6.Text = "Buscar";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.UseVisualStyleBackColor = false;
             // 
@@ -310,7 +287,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(76, 76);
             this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
+            this.button5.Text = "Eliminar";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
@@ -328,7 +305,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(76, 76);
             this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
+            this.button4.Text = "Cancelar";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -387,29 +364,50 @@
             this.btn_ingresar.UseVisualStyleBackColor = false;
             this.btn_ingresar.Click += new System.EventHandler(this.Btn_ingresar_Click);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.contenido, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(17, 131);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1137, 77);
+            this.tableLayoutPanel1.TabIndex = 9;
+            // 
+            // contenido
+            // 
+            this.contenido.AutoSize = true;
+            this.contenido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contenido.Location = new System.Drawing.Point(3, 0);
+            this.contenido.Name = "contenido";
+            this.contenido.Size = new System.Drawing.Size(1131, 77);
+            this.contenido.TabIndex = 0;
+            this.contenido.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Navegador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Navegador";
             this.Size = new System.Drawing.Size(1178, 657);
             this.Load += new System.EventHandler(this.Navegador_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label contenido;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button button15;
@@ -427,5 +425,7 @@
         private System.Windows.Forms.Button btn_Guardar;
         private System.Windows.Forms.Button Modificar;
         private System.Windows.Forms.Button btn_ingresar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label contenido;
     }
 }

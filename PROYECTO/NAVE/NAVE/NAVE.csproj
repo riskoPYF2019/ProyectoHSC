@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CapaDeDiseno">
-      <HintPath>G:\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
+      <HintPath>..\..\..\DLL\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

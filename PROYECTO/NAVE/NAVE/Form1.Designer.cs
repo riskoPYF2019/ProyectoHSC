@@ -38,6 +38,7 @@
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1178, 657);
             this.navegador1.TabIndex = 0;
+            this.navegador1.Load += new System.EventHandler(this.Navegador1_Load);
             // 
             // Form1
             // 
