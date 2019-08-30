@@ -320,5 +320,10 @@ namespace CapaDeDiseno
         {
             Application.Exit();
         }
+
+        private void Button13_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, " Página web ayuda/ayuda.chm", "Menúboletos.html");//Abre el menu de ayuda HTML
+        }
     }
 }
