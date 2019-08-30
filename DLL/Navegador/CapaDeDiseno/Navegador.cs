@@ -15,6 +15,7 @@ namespace CapaDeDiseno
     {
         logica logic = new logica();
         string tabla = "def";
+        string sitio;
         int pos = 8;
         int noCampos = 1;
         int x = 30;
@@ -41,6 +42,11 @@ namespace CapaDeDiseno
         public void asignarTabla(string table)
         {
             tabla = table;
+        }
+        public void asignarayuda(string sitiob)
+        {
+            sitio = sitiob;
+
         }
 
         void CreaComponentes()
@@ -323,7 +329,8 @@ namespace CapaDeDiseno
 
         private void Button13_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, " Página web ayuda/ayuda.chm", "Menúboletos.html");//Abre el menu de ayuda HTML
+           
+            Help.ShowHelp(this, " Página web ayuda/ayuda.chm",sitio);//Abre el menu de ayuda HTML
         }
     }
 }

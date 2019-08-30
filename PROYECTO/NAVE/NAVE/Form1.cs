@@ -16,6 +16,8 @@ namespace NAVE
         {
             InitializeComponent();
             navegador1.asignarTabla("peliculas");
+            navegador1.asignarayuda("menu.html");
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
